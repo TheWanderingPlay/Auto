@@ -1,0 +1,207 @@
+.body{
+    margin: 0;
+    background-image: url(./multimedia/fondo.jpg);
+    background-repeat: repeat-x;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}        
+    .auto{
+        position: relative;
+        width: 80rem;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .cuerpo{
+            position: absolute;
+            height: min-content;
+            width: 53rem;
+            z-index: 0;
+            padding: 2rem 12rem;
+        }
+
+        .r_adelante{
+            position: absolute;
+            width: 10.7rem;
+            height: auto;
+            top: 21.700000000000003rem;
+            left: 50.5rem;
+            z-index: 2;
+        }
+        .r_atras{
+            position: absolute;
+            width: 10.899999999999999rem;
+            height: auto;
+            top: 21.700000000000003rem;
+            left: 19.5rem;
+            z-index: 3;
+        }
+        .fuego{
+            background-image: url(./multimedia/PartesAuto/llama.png);
+            background-position: 34rem 13rem;
+            background-size: 200rem;
+            top: 4.74rem;
+            left: -37.5rem;
+            z-index: 1;
+            background-repeat: no-repeat;
+            width: 1252.3923px;
+            height: 500px;
+            position: absolute;
+        }
+
+        .tiempo{
+            position: absolute;
+            top: 15rem;
+            left: 27rem;
+            z-index: 4;
+            width: 47rem;
+            height: auto;
+            opacity: 100%;
+        }
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+/* -------------------------------------animados-------------------------------------- */
+
+.body1{
+    margin: 0;
+    background-image: url(./multimedia/fondo.jpg);
+    background-repeat: repeat-x;
+    animation: avance 2s infinite linear;
+}
+    @keyframes avance{
+        100%{
+            background-position: -218rem 0rem;
+        }
+    }
+
+.contenedor1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}        
+
+    .auto1{
+        position: relative;
+        width: 80rem;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        .cuerpo1{
+            position: absolute;
+            height: min-content;
+            width: 53rem;
+            z-index: 0;
+            animation: motores 0.2s infinite linear
+        }
+            @keyframes motores{
+                0%{
+
+                }
+                50%{
+                    translate: 0rem 0.5rem;
+                }
+                100%{
+                    translate: 0rem 0rem;
+                }
+            }
+
+        .r_adelante1{
+            position: absolute;
+            width: 10.7rem;
+            height: auto;
+            top: 21.700000000000003rem;
+            left: 50.5rem;
+            animation: giro 0.5s infinite linear ;
+            z-index: 2;
+        }
+            @keyframes giro{
+                0%{
+
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+        }
+        .r_atras1{
+            position: absolute;
+            width: 10.899999999999999rem;
+            height: auto;
+            top: 21.700000000000003rem;
+            left: 19.5rem;
+            animation: giroA 0.5s infinite linear;
+            z-index: 3;
+        }
+            @keyframes giroA{
+                0%{
+
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+        .fuego1{
+            background-image: url(./multimedia/PartesAuto/llama.png);
+            background-position: 34rem 13rem;
+            background-size: 200rem;
+            top: 4.74rem;
+            left: -37.5rem;
+            z-index: 1;
+            background-repeat: no-repeat;
+            width: 1055.3923px;
+            height: 500px;
+            position: absolute;
+
+            animation: fuego 0.4s steps(3) infinite;
+        }
+            @keyframes fuego{
+                0%{
+                }
+                100%{
+                    background-position: -134rem 13rem;
+                }
+            }
+
+        .tiempo1{
+            position: absolute;
+            top: 15rem;
+            left: 27rem;
+            z-index: 4;
+            width: 47rem;
+            height: auto;
+            animation: opacidad 1s infinite linear;
+        }
+            @keyframes opacidad {
+                0%{
+                    opacity: 0;
+                }
+                50%{
+                    opacity: 100;
+                }
+                100%{
+                    opacity: 0;
+                }
+            }
+
+        
